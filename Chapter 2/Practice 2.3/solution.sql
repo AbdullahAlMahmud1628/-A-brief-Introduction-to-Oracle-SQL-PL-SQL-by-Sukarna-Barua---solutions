@@ -1,4 +1,5 @@
--- a)  Select names, salary, and commissions of all employees of job type 'AD_PRES'. Sort the result in ascending order of commission and then descending order of salary
+-- a)  Select names, salary, and commissions of all employees of job type 'AD_PRES'.
+--     Sort the result in ascending order of commission and then descending order of salary
 
 SELECT (FIRST_NAME || ' ' || LAST_NAME) NAME,SALARY,COMMISSION_PCT "COMMISSIONS" 
 FROM EMPLOYEES

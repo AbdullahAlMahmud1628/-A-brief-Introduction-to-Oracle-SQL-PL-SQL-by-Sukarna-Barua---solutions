@@ -19,7 +19,8 @@ WHERE MANAGER_ID IS NOT NULL;
 SELECT DISTINCT(CITY)
 FROM LOCATIONS;
 
--- e) Write an SQL query to retrieve LOCATION_ID, ADDRESS from LOCATIONS table. The ADDRESS should print each location in the following format: STREET_ADDRESS, CITY, STATE_PROVINCE, POSTAL_CODE.
+-- e) Write an SQL query to retrieve LOCATION_ID, ADDRESS from LOCATIONS table.
+--    The ADDRESS should print each location in the following format: STREET_ADDRESS, CITY, STATE_PROVINCE, POSTAL_CODE.
 
 SELECT LOCATION_ID, (STREET_ADDRESS || ', ' || CITY || ', ' || STATE_PROVINCE || ', ' || POSTAL_CODE) "ADDRESS"
 FROM LOCATIONS;
